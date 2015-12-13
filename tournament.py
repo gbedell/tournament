@@ -38,7 +38,6 @@ def countPlayers():
     c.execute(query)
     results = c.fetchone()
     count_of_players = results[0]
-    conn.commit()
     conn.close()
     return count_of_players
 
@@ -119,7 +118,6 @@ def playerStandings():
     c.execute(query)
     results = c.fetchall()
     return results
-    conn.commit()
     conn.close()
 
 
